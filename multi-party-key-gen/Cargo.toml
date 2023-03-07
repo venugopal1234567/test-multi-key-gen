@@ -1,0 +1,13 @@
+[package]
+name = "multi-party-key-gen"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["curv-kzen/rust-gmp-kzen"]
+
+[dependencies]
+criterion = "0.3"
+curv-kzen = { version = "0.9", default-features = false }
+multi-party-ecdsa = { git = "https://github.com/ZenGo-X/multi-party-ecdsa.git" }
+
